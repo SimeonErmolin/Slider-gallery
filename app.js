@@ -3,11 +3,11 @@ const cards = document.querySelectorAll('.card');
 cards.forEach((card) => {
   card.addEventListener('click', () => {
     clearActiveCard();
-    card.classList.toggle('active');
+    card.classList.add('active');
   })
 })
 function clearActiveCard() {
   cards.forEach((item) => {
-    item.classList.toggle('active');
+    item.classList.remove('active');
   })
 }
